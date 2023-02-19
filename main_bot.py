@@ -157,7 +157,7 @@ async def tipo(ctx):
     await ctx.channel.send(image)
     await ctx.channel.send(f'El sombrero seleccionador a determinado que eres el programador del tipo: {random.choice(type_prog)}')
 
-# Devuelve el link o links con ejercicios y pdf's de programacion.
+# Devuelve el link o links con ejercicios y pdf's de programación.
 @kurumy.command(description="Links de interés con ejercicios y pdf's")
 async def links(ctx):
     for key, values in links_int.items():
@@ -196,4 +196,5 @@ async def invitar(ctx):
         await ctx.channel.send(invitation)
 
 my_token = data['my_token']
+print(my_token)
 kurumy.run(my_token)
